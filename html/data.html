@@ -29,10 +29,10 @@
             var x, i, xmlDoc, table;
 
             xmlDoc = xml.responseXML;
-            table = "<tr><th>src</th><th>alt</th></tr>";
+            table = "<tr><th>gallery</th><th>images</th></tr>";
 
             x = xmlDoc.getElementsByTagName("images");
-            
+
             for (i = 0; i < x.length; i++) {
                 table += "<tr><td>" +
                     x[i].getElementsByTagName("src")[0].childNodes[0].nodeValue +
