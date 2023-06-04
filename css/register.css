@@ -1,0 +1,10 @@
+main{
+    padding-left: 2%;
+    text-align: center;
+}
+/* This is so that the elements dont get next to the left */
+/* .goup{text-align: center;} *//* No longer needed since main has it */
+
+#register{display: none;}
+#login{display: none;}
+section>button{width: 20%; height: 50px; margin: 10%;}

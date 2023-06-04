@@ -1,0 +1,38 @@
+/* main{padding-left: 3%;} */
+main>p{text-align: center; font-weight: bold; font-size:x-large;} /* This is for TODAYS NEWS! */
+
+main{display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    text-align: center; align-items: center;} /* make responsive all the news and centered, this includes the "go up"*/
+
+main>div{display: flex; flex-wrap: wrap; /* make the parts of the new responsive */
+    padding-bottom: 2%; /* this is to separate the news from eachother */
+} 
+main section{display: flex; flex-wrap: wrap; flex-direction: column; align-items: center;} /* This is for the section to be responsive, and has to be on top */
+main section div{display: flex; flex-wrap: wrap; justify-content: center;} /* so the text is responsive */
+
+main img{border: green solid 5px;} /* all images in main will have this style */
+/* main>div>div img{width: 90%;}  */
+
+main>div>div{display: flex;} /* makes the container of "a", before the image, responsive */
+main>div>div>a>img{width: 90%;} /* I dont the col-s* to redimension the image because I dont want the img 100% width in movile */
+main>div{margin-bottom: 5%;} /* Ths separates the news from eachother */
+
+/* section>div{width: 90%;} */
+/* section>div>a{margin: ;} */ /* The text wont touch the walls the screen, and will be cleaer :) */
+
+
+@media only screen and (min-width: 600px) {
+    /* For tablet: */
+    main section{justify-content: center;} 
+    main img{max-width: 100%;} /* for the tablet and the desktop */
+    main section{/*width: 100%;*/ padding-right: 3%;}
+} /* This media is used so the text (title and subtitle) is shown like specified */
+
+
+
+@media only screen and (min-width: 1000px) {
+    /* For desktop: */
+
+} /* This media is not used */

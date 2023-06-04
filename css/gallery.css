@@ -1,0 +1,55 @@
+/* GALLERY */
+
+/* LEFT PART */
+main{display: flex; 
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+main section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; align-items: center; /* items will be centered in x and y axis */
+} /* Makes all section inside footer flex, so images can be centered inside this */
+main section a{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+    margin: 1%;
+} /* The images inside "a" will be centered and will have flex */
+main>div>div{
+    display: flex;
+    justify-content: center; align-items: center;
+    flex-wrap: wrap;
+} /* This will make images even more centred */
+
+
+/* BOTH PARTS, LEFT AND RIGHT */
+main hr{display: none;} /* This will be changed for desktop mode to be visible */
+main>div>div>p{margin-left: 2%;} /* Makes the titles be separated from the left */
+main img{border: green solid 5px; max-width: 100%;} /* Gives images inside "main" the caracteristic green border */
+main>p{text-align: center;} /* This will make the "go up", centered */
+
+/* RIGHT, ASIDE PART */
+main aside{padding: 1%;} 
+aside div{text-align: center;}
+
+/* For tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/* For desktop */
+@media only screen and (min-width: 1200px) {
+    main hr{
+        max-width: 90%;
+        margin-left: 10%;
+        height: 3px;
+        display: block;
+        margin: 1%;
+        background-color: lightblue;
+    } /* make "hr" tag styled */
+    main aside{border-left: 3px solid lightblue; }/* This will give the separation line present in desktop mode */
+}

@@ -1,0 +1,9 @@
+<!DOCTYPE gallery[
+<!ELEMENT gallery(images)>
+<!ELEMENT images(src, alt, dscore, tscore, uploaded)>
+<!ELEMENT src (#PCDATA)>
+<!ELEMENT alt (#PCDATA)>
+<!ELEMENT dscore (#PCDATA)>
+<!ELEMENT tsocre (#PCDATA)>
+<!ELEMENT uploaded (#PCDATA)>
+]>

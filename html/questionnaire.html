@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Pablo Montes">
+        <meta name="declarations" content="This webpage is directed to the spanish community who want to learn english :D">
+        <title>Questionnaire</title>
+        <link rel="stylesheet" href="../css/w3.css">
+        <link rel="stylesheet" href="../css/common-heading.css">
+        <link rel="stylesheet" href="../css/common-general.css">
+        <link rel="stylesheet" href="../css/common-footer.css">
+        <link rel="stylesheet" href="../css/questionnaire.css">
+        <link rel="shortcut icon" href="../images/news-icon.png">
+    </head>
+<body>
+    <!-- HEADER -->
+    <header class="">
+
+        <nav class="">
+            <ul class="">
+                <li class=""><a href="#menu"><img class="" src="../images/horizontal-lines.png"
+                            alt="the menu image of three lines"></a>
+                    <div class=""> <!-- This div would be 
+                    for a opacity option wich I hope I can finish -->
+                        <ul class=""> <!-- MOVILE dropdown -->
+                            <li class=""><a href="">ABOUT US</a></li>
+                            <li class=""><a href="">OUR WORK</a></li>
+                            <li class=""><a href="gallery.html">GALLERY</a></li>
+                            <li class=""><a href="index.html">TODAYS NEWS</a></li>
+                            <li class=""><a href="questionnaire.html">QUESTIONNAIRE</a></li>
+                        </ul>
+                        <!-- <div class="opacity absolute">This is the opacity</div>
+                    -->
+                    </div>
+                </li>
+            </ul>
+            <ul class="dropdown-tablet">
+                <li><a class="" href="">ABOUT US</a></li>
+                <li><a class="" href="">OUR WORK</a></li>
+                <li class=""><a href="gallery.html">GALLERY</a></li>
+                <li class=""><a href="index.html">TODAYS NEWS</a></li>
+                <li class=""><a href="questionnaire.html">QUESTIONNAIRE</a></li>
+            </ul>
+        </nav>
+
+        <!-- Here ends the dropdown menu -->
+        <!-- The web logo -->
+        <div class="">
+            <a href="index.html">
+                <img class="" src="../images/news-that-feed.png" alt="the main image">
+            </a>
+        </div>
+
+        <!-- The user image -->
+        <aside class="">
+            <a href="../html/register.html">
+                <img class="" src="../images/user.png" alt="user icon login">
+            </a>
+        </aside>
+
+        <!-- This is the menu that appears in desktop mode -->
+        <ul class="dropdown-desktop">
+            <li><a class="" href="">ABOUT US</a></li>
+            <li><a class="" href="">OUR WORK</a></li>
+            <li class=""><a href="gallery.html">GALLERY</a></li>
+            <li class=""><a href="index.html">TODAYS NEWS</a></li>
+            <li class=""><a href="questionnaire.html">QUESTIONNAIRE</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <h2 id="home"> Questionnaire </h2>
+        <p><b>Answer the following questions:</b></p>
+
+        <!-- Question one -->
+        <p class="titles">1. When did the French revolution start?</p><!-- 5/5/1789 -->
+        <input type="date" name="french-revolution" id="q1">
+        <br><br>
+
+        <!-- Question two -->
+        <p class="titles">2.What is the name of a famous Spanish war correspondent and writer?</p>
+        <!-- Arturo (Arturo Pérez Reverte)-->
+        <input type="text" name="novel" id="q2">
+        <br><br>
+
+        <!-- Question three -->
+        <p class="titles">3.What was the most visited city in 2023 in the world?</p>
+        <select id="q3"> <!-- Paris, France (but actually is Hong Kong) -->
+            <option id="city1" value="empty">*none*</option>
+            <option id="city2" value="Bangkok">Bangkok, Thailand </option>
+            <option id="city3" value="Paris">Paris, France</option>
+            <option id="city4" value="Dubai">Dubai, UAE</option>
+            <option id="city5" value="London">London, UK</option>
+        </select>
+        <br><br>
+
+        <!-- Question four -->
+        <p class="titles">4. In which country is located the biggest chip factory in the world?</p> <!-- Taiwan -->
+        <input type="radio" name="king" value="USA" id="q41"> USA <br>
+        <input type="radio" name="king" value="Taiwan" id="q42"> Taiwan<br>
+        <input type="radio" name="king" value="Germany" id="q43"> Germany<br>
+        <input type="radio" name="king" value="Spain" id="q44"> Spain <br>
+        <input type="radio" name="king" value="Poland" id="q45"> Poland<br>
+        <br><br>
+
+        <!-- Question five -->
+        <p class="titles">5.What is the secret of happiness?</p><!-- Socrates and Lao Tzu -->
+        <input type="checkbox" name="happiness" value="Nietzsche" id="q51"> A kind of
+        control one has over their surroundings.Nietzsche<br>
+
+        <input type="checkbox" name="happiness" value="Socrates" id="q52"> Appreciating
+        simpler pleasures. Socrates<br>
+
+        <input type="checkbox" name="happiness" value="Confucious" id="q53"> Connecting
+        thoughts, feelings, and behaviors. Confucious<br>
+
+        <input type="checkbox" name="happiness" value="Lao" id="q54"> Being present in the
+        moment and enjoying the ride. Lao Tzu
+        <br><br>
+
+        <button onclick="check()">Check</button>
+        <p class="titles" id="congratulations"> </p>
+        <p id="mark"> </p>
+        <p id="feedback"> </p>
+
+        <!-- This is the go up -->
+        <p class="goup titles col-s-12 col-12"><a href="questionnaire.html#home">GO UP</a></p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <p>© Editions NEWS THAT FEED</p>
+        <section>
+            <p><a href="">Contact Us</a></p>
+            <p><a href="">Legal info</a></p>
+            <p><a href="">Cookies policy</a></p>
+            <p><a href="">Privacy policy</a></p>
+            <p><a href="index.html#home">Todays news</a></p>
+        </section>
+        <hr>
+    </footer>
+
+    <!-- SCRIPT -->
+     <script src="../JS/Questionnaire.js"></script> 
+</body>
+
+</html>

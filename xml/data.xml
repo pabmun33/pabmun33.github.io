@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SYSTEM "data.dtd">
+
+<gallery>
+<images>
+    <src>https://img.unocero.com/2021/08/rickroll_4k-1024x768.jpeg</src>
+    <alt>roll</alt>
+    <dscore>100</dscore>
+    <tscore>1000</dscore>
+    <uploaded>10-2-2023</uploaded>
+</images>
+
+<images>
+    <src>https://cadena100-cdnmed.agilecontent.com/resources/jpg/0/6/1649151706060.jpg</src>
+    <alt>ladron</alt>
+    <dscore>12</dscore>
+    <tscore>40</dscore>
+    <uploaded>12-3-2023</uploaded>
+</images>
+
+<images>
+    <src>https://www.lamoncloa.gob.es/presidente/PublishingImages/SANCHEZ-BIOGRAFIA/080323-sanchez-biografia2.jpg</src>
+    <alt>sanchez</alt>
+    <dscore>99</dscore>
+    <tscore>700</dscore>
+    <uploaded>24-2-2023</uploaded>
+</images>
+</gallery>

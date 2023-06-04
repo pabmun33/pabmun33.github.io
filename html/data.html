@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data page</title>
+</head>
+
+<body>
+    <h1>I COULDN'T MAKE IT WORK ON W3</h1>
+    <h2>Also I don't have your email...</h2>
+    <table id="output">
+    </table>
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                show(this);
+            }
+        };
+        xmlhttp.open("GET", "data.xml", true);
+        xmlhttp.send();
+        function show(xml) {
+            var x, i, xmlDoc, table;
+            xmlDoc = xml.responseXML;
+            table = "<tr><th>Src</th><th>Alt</th></tr>";
+            x = xmlDoc.getElementsByTagName("images");
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("src")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("alt")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+            }
+            document.getElementById("output").innerHTML = table;
+        }
+    </script>
+</body>
+
+</html>

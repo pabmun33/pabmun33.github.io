@@ -1,0 +1,19 @@
+/* FOOTER */
+footer hr{
+    height: 2px;
+    background-color: lightblue;
+    width: 90%;
+    margin-left: 5%;
+} /* This is for the lines that separate the footer from the rest of the page */
+
+footer{text-align: center;} /* aligns all text inside the footer */
+footer section{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+} /* makes the footer responsive */
+
+footer>section>p{margin: 1%;} /* This separates all the links in the footer */

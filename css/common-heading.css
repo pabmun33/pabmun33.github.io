@@ -1,0 +1,102 @@
+/* This is the start of the heading */
+
+
+/* HEADING ALL IT IS */
+header{display: flex;
+    justify-content: center; 
+    /* padding: 1%; */ /* This would cause non desired spaces! Has to be put individually */
+    align-items: baseline; 
+    flex-wrap: wrap;
+    background-color: #ebf7ee;
+    box-shadow: 0px 0px 10px #888
+} /* the header itself */
+
+header ul, li{ /* remove the style of the lists, simply */
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* I don't use the col-xx here because I dont want the header elements with width 100% in movile */
+/* Images containers */
+header>nav{width: 16.66%;text-align: left;} /* this contains the dropdown menu */
+header>div{width: 66.66%; text-align: center;} /* this contains the MAIN image */
+header>aside{width: 16.66%; text-align: right;} /* this contains the user ICON */
+
+/* images widths */
+li img{width: 90%;} /* This is for the icon of the dropdown menu */
+div img{width: 70%;} /* This is the main image */
+aside img{width: 90%;} /* This is the USER icon */
+
+
+
+/* DROPDOWN MENU MOVILE*/
+ul>li>div>ul{display: none;} /* dropdown on movile does not display by default */
+ul>li:hover>div>ul{
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    background-color: #ccffff;
+    width: 50%; height: 100%;
+    align-items: center;
+    color: green;
+} /* dropdown on movile displays when mouse over icon, and here I also modify the style */
+ul>li:hover>div>ul>li{margin-top: 20%;text-decoration: underline;} /* dropdown LINKS separated from eachoder, and underlined */
+.dropdown-desktop{display: none;} /* dropdown on DESKTOP does not display */
+.dropdown-tablet{display: none;} /* dropdown TABLET does not display in movile mode */
+
+
+
+/* DROPDOWN MENU TABLET */
+@media only screen and (min-width: 600px) {
+    /* For tablet: */
+    /* I have erased the col-*, because it goes in common-general.css */
+
+    ul>li>a>img{display: none;} /* This is to hide the dropdown bars image */
+    .dropdown-tablet{display: flex; color: green;}/* show the links and style them */
+
+    .dropdown-tablet>li{margin-top: 4%; text-decoration: underline;}
+    /* li img{max-width: 30%;}*/ /* This is for the icon of the dropdown menu */
+    div img{max-width: 50%;} /* This is the logo image */
+    aside img{max-width: 40%;} /* This is the USER icon */
+
+    header{display: flex; 
+        justify-content: center; 
+        padding: 1%; 
+        align-items:center; 
+        flex-wrap: wrap;
+    } /* the header itself, also applies for the desktop */
+
+    .dropdown-tablet{display: flex; flex-wrap: wrap;}/* makes a FLEX */
+    .dropdown-tablet>li{width: 100%; text-align: center;}/* This ALIGNS the text */
+    .dropdown-tablet>li>a:hover{color: green;} /* This DECORATES the text when mouse over */
+}
+
+/* DROPDOWN MENU DESKTOP */
+@media only screen and (min-width: 1000px) {
+    /* For desktop: */
+    /* I have erased the col-*, because it goes in common-general.css */
+
+    .dropdown-tablet{display: none;} /* Tablet's dropdown does not display */
+    .dropdown-desktop>li{margin-top: 1%; text-decoration: underline; color: green;} /* decorate the links */
+
+    .dropdown-desktop{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%; 
+            margin: 1%;
+            border-top: lightblue solid 3px;
+            margin-bottom: 0%;
+    } /* This SHOWS/DISPLAYS the dropdown in desktop mode */
+    .dropdown-desktop>li{width: 25%; text-align: center;}/* This ALIGNS the text in the row */
+    .dropdown-desktop>li>a:hover{color: green;} /* This DECORATES the text when mouse over */
+
+/*    li img{max-width: 30%;}*/ /* This is for the icon of the dropdown menu
+    but because it isn't shown in desktop this shoulden't be here */
+    div img{max-width: 35%;} /* This is the logo image */
+    aside img{max-width: 40%;} /* This is the USER icon */
+
+}
+
+/* END ALL HEADING */

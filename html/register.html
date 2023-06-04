@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/common-heading.css">
+    <link rel="stylesheet" href="../css/inex_style.css">
+    <link rel="stylesheet" href="../css/common-general.css">
+    <link rel="stylesheet" href="../css/common-footer.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="shortcut icon" href="../images/news-icon.png">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="home" class="">
+
+        <nav class="">
+            <ul class="">
+                <li class=""><a href="#menu"><img class="" src="../images/horizontal-lines.png"
+                            alt="the menu image of three lines"></a>
+                    <div class=""> <!-- This div would be 
+                    for a opacity option wich I hope I can finish -->
+                        <ul class=""> <!-- MOVILE dropdown -->
+                            <li class=""><a href="">ABOUT US</a></li>
+                            <li class=""><a href="">OUR WORK</a></li>
+                            <li class=""><a href="gallery.html">GALLERY</a></li>
+                            <li class=""><a href="index.html">TODAYS NEWS</a></li>
+                            <li class=""><a href="questionnaire.html">QUESTIONNAIRE</a></li>
+                        </ul>
+                        <!-- <div class="opacity absolute">This is the opacity</div>
+                    -->
+                    </div>
+                </li>
+            </ul>
+            <ul class="dropdown-tablet">
+                <li><a class="" href="">ABOUT US</a></li>
+                <li><a class="" href="">OUR WORK</a></li>
+                <li class=""><a href="gallery.html">GALLERY</a></li>
+                <li class=""><a href="index.html">TODAYS NEWS</a></li>
+                <li class=""><a href="questionnaire.html">QUESTIONNAIRE</a></li>
+            </ul>
+        </nav>
+
+        <!-- Here ends the dropdown menu -->
+        <!-- The web logo -->
+        <div class="">
+            <a href="index.html">
+                <img class="" src="../images/news-that-feed.png" alt="">
+            </a>
+        </div>
+
+        <!-- The user image -->
+        <aside class="">
+            <a href="../html/register.html">
+                <img class="" src="../images/user.png" alt="">
+            </a>
+        </aside>
+
+        <!-- This is the menu that appears in desktop mode -->
+        <ul class="dropdown-desktop">
+            <li><a class="" href="">ABOUT US</a></li>
+            <li><a class="" href="">OUR WORK</a></li>
+            <li class=""><a href="gallery.html">GALLERY</a></li>
+            <li class=""><a href="index.html">TODAYS NEWS</a></li>
+            <li class=""><a href="questionnaire.html">QUESTIONNAIRE</a></li>
+        </ul>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div id="LoginQuestion"> <!-- This div is the first that appears and asks the user if he wants to log in or to sign in -->
+            <!-- The id from above is not used for now -->
+            <h2 id="question">Do you want to Log in or to Sign in?</h2>
+            <section>
+                <button onclick="ViewOption(1)">Login</button>
+                <button onclick="ViewOption(2)">Sign in</button>
+            </section>
+            
+        </div>
+
+        <div id="register"> <!-- This div is for the REGISTER option, minimize it! it won't display by default -->
+            <h2 class="titles">Register in our webpage!</h2>
+
+            <p>Name and Surnames: </p> <!-- Name and surname inputs -->
+            <span>Name: </span> <input type="text" placeholder="Pablo"><br>
+            <span>First surname: </span> <input type="text" placeholder="Montes"><br>
+            <span>Second surname: </span> <input type="text" placeholder="Muñoz"><br>
+            <br>
+
+            <p>Email: </p> <!-- Email input -->
+            <span>Your email: </span> <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                placeholder="email@hello.com"><br>
+            <br>
+
+            <p>City and country: </p> <!-- City option -->
+            <span>City: </span> <input type="text" placeholder="Valencia"><br>
+            <span>country: </span> <input type="text" placeholder="Spain"><br>
+            <br>
+
+            <p>Sex: </p>
+            <span>Select your sex: </span>
+            <select id="sex"> <!-- Sex options -->
+                <option id="sex1" value="empty">*leave blank*</option>
+                <option id="sex2" value="male">Male </option>
+                <option id="sex3" value="female">Female</option>
+                <option id="sex4" value="another">Another</option>
+                <option id="sex5" value="attack">Attack helicopter</option>
+            </select>
+            <br>
+
+            <p>Phone: </p><!-- Insert phone number -->
+            <span>Your phone number: </span> <input type="text" placeholder="601-396-270"><br>
+            <br>
+
+            <p>Password: </p><!-- Password input -->
+            <span>Type the password: </span> <input type="text"><br>
+            <span>Repeat the password: </span> <input type="text"><br>
+            <br>
+
+            <p>Area for comments: </p> <!-- comment section -->
+            <input class="col-s-6 col-6" type="text" placeholder="Optional comments here!"><br>
+            <br><br>
+
+            <button onclick="">Sumbit</button>
+        </div>
+
+        <div id="login"><!-- This div is for the LOGIN option, minimize it! it won't display by default -->
+            <h2 class="titles">Log in into our page!</h2>
+            <br>
+
+            <span>Type the email: </span> <input type="text"><br><br>
+            <span>Type the password: </span> <input type="text"><br><br>
+            <button onclick="">Sumbit</button>
+
+
+        </div>
+
+        <!-- This is the go up -->
+        <p class="goup titles col-s-12 col-12"><a href="register.html#home">GO UP</a></p>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- -->
+    <footer>
+        <hr>
+        <p>© Editions NEWS THAT FEED</p>
+        <section>
+            <p><a href="">Contact Us</a></p>
+            <p><a href="">Legal info</a></p>
+            <p><a href="">Cookies policy</a></p>
+            <p><a href="">Privacy policy</a></p>
+            <p><a href="index.html#home">Todays news</a></p>
+        </section>
+        <hr>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="../JS/Register.js"></script>
+</body>
+
+</html>
