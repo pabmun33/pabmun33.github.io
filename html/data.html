@@ -21,13 +21,18 @@
                 show(this);
             }
         };
+
         xmlhttp.open("GET", "data.xml", true);
         xmlhttp.send();
+
         function show(xml) {
             var x, i, xmlDoc, table;
+
             xmlDoc = xml.responseXML;
             table = "<tr><th>Src</th><th>Alt</th></tr>";
+
             x = xmlDoc.getElementsByTagName("images");
+            
             for (i = 0; i < x.length; i++) {
                 table += "<tr><td>" +
                     x[i].getElementsByTagName("src")[0].childNodes[0].nodeValue +
