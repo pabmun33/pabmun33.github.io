@@ -1,4 +1,4 @@
-<!ELEMENT gallery(images)>
+<!ELEMENT gallery(images+)>
 <!ELEMENT images(src, alt, dscore, tscore, uploaded)>
 <!ELEMENT src (#PCDATA)>
 <!ELEMENT alt (#PCDATA)>
